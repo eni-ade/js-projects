@@ -1,3 +1,4 @@
+// function to create elements
 function createElement(element) {
   return document.createElement(`${element}`);
 }
