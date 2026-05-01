@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: purple;
+  color: #fff;
+  width: 70vw;
+  height: fit-content;
+  max-height: 300px;
+  padding: 5rem 1.5rem;
+  position: relative;
+}
+
+.author-img {
+  position: absolute;
+  top: 0rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.message {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.author-name {
+  font-weight: bold;
+  font-size: 14px;
+}
