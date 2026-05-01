@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  flex-direction: column;
+  width: 70vw;
+  max-width: 400px;
+  gap: 1rem;
+}
+
+input {
+  padding: 0 10px;
+  height: 40px;
+}
+
+button {
+  height: 40px;
+  border: none;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
