@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sansita", sans-serif;
+  height: 100vh;
+  color: brown;
+}
+
+.flex {
+  display: flex;
+}
+
+main {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 95vw;
+  max-width: 1000px;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 100%;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.recipe {
+  gap: 2rem;
+  background-color: antiquewhite;
+  margin-bottom: 2rem;
+}
+
+.info {
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+
+.info p {
+  line-height: 1.5;
+}
+
+.info h3 {
+  font-size: 1.5rem;
+}
+
+img {
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+a {
+  width: fit-content;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: sans-serif;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+}
