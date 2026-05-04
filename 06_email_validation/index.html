@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Validation</title>
+  </head>
+  <body>
+    <div class="output" style="color: #fff"></div>
+    <input type="email" placeholder="Enter Email" />
+    <button>Validate</button>
+    <script>
+      const output = document.querySelector(".output");
+      const input = document.querySelector("input");
+      const button = document.querySelector("button");
+
+      const pattern = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/g;
+
+      function validateEmail() {
+        const email = input.value;
+        const testResult = email.match(pattern);
+        if (testResult === null) {
+          output.style.backgroundColor = "red";
+          output.textContent = "Invalid Email";
+        } else {
+          output.style.backgroundColor = "green";
+          output.textContent = "Valid Email";
+        }
+      }
+      button.addEventListener("click", validateEmail);
+    </script>
+  </body>
+</html>
